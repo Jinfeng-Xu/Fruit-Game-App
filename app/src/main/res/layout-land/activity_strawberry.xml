@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9"
+        android:id="@+id/lin"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_en"
+            android:layout_weight="1"
+            android:text="English"
+            android:textAllCaps="false"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_cn"
+            android:layout_weight="1"
+            android:text="Chinese"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+    <component.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:layout_gravity="center"
+        android:text="Strawberry"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:id="@+id/mtv_title"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fruit_strawberry" />
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/mtv_info"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:text="@string/strawberry_en"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_weight="1.9"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_back"
+        android:text="BACK"
+        />
+</LinearLayout>
